@@ -9,7 +9,7 @@ public class Small {
 
     private static String input;
     private static int integers;
-    private static int number;
+    private static int number1;
     private static int smallest;
 
     public static void main(String[] args) {
@@ -21,13 +21,13 @@ public class Small {
 
         for (int counter = 1; counter <= integers; counter++) {
             input = JOptionPane.showInputDialog("Enter integer");
-            number = Integer.parseInt(input);
+            number1 = Integer.parseInt(input);
 
             if (counter == 1) {
-                smallest = number;
+                smallest = number1;
 
-            } else if (number < smallest) {
-                smallest = number;
+            } else if (number1 < smallest) {
+                smallest = number1;
             }
         }
         JOptionPane.showMessageDialog(null, "Smallest Integer is:" + smallest, "Result", JOptionPane.INFORMATION_MESSAGE);
